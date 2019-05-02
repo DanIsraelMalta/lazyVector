@@ -429,8 +429,6 @@ namespace Lazy {
 
             // resize vector to a given size
             void resize(const std::size_t xi_size) {
-                m_size = xi_size;
-
                 if (xi_size > m_size) {
                     // allocate
                     if (xi_size > m_reservedSize) {
@@ -446,12 +444,12 @@ namespace Lazy {
                         }
                     }
                 }
+
+                m_size = xi_size;
             }
 
             // resize vector to a given size and fill it with a given value
             void resize(const std::size_t xi_size, const T& xi_value) {
-                m_size = xi_size;
-
                 if (xi_size > m_size) {
                     // allocate
                     if (xi_size > m_reservedSize) {
@@ -469,6 +467,8 @@ namespace Lazy {
                         }
                     }
                 }
+
+                m_size = xi_size;
             }
 
             // reserve a given size
