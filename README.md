@@ -1,4 +1,7 @@
 # lazyVector
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d1d79ecc1d9e48c18277f81b0cc0b76b)](https://www.codacy.com/app/DanIsraelMalta/lazyVector?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=DanIsraelMalta/lazyVector&amp;utm_campaign=Badge_Grade)
+
 An implementation of std::vector (without costum allocator) such that all the avaialbe operators are lazy evaluated (via expression template proxies).
 The only requirement from the user, is that the object held by the vector will have the required operators defined,
 and that numerical/bit operators shall have both the regular (+,/,-,...) and the assignable (+=, /=, -=,....) form defined.
